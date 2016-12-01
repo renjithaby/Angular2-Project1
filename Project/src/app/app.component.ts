@@ -1,0 +1,41 @@
+import { Component,trigger, state, style, transition, animate,HostListener } from '@angular/core';
+import {BrowserModule} from  '@angular/platform-browser';
+
+@Component({
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css'],
+    animations: [
+        trigger('slideInOut', [
+            state('in', style({
+                transform: 'translate3d(0, 0, 0)'
+            })),
+            state('out', style({
+                transform: 'translate3d(-100%, 0, 0)'
+            })),
+            transition('in => out', animate('400ms ease-in-out')),
+            transition('out => in', animate('400ms ease-in-out'))
+        ]),
+    ]
+})
+export class AppComponent {
+  title = 'app works!';
+    menuState:string = 'out';
+
+    toggleMenuState(){
+        this.menuState = this.menuState === 'out' ? 'in' : 'out';
+        console.log(window);
+    }
+
+    @HostListener('window:resize', ['$event'])
+    onResize(event) {
+        if(event.target.innerWidth>768) {
+            this.menuState = 'out';
+        }
+    }
+
+
+  // console.log(window);
+
+
+}

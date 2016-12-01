@@ -1,0 +1,167 @@
+/** Nav Bar Styles*/
+.box-left:before, .box-left:after{
+    background-color :white;
+    min-height: 50px;
+}
+.navbar-brand.side-logo{
+    margin-left:10px;
+}
+.navbar-header button{
+    margin-left:15px;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    /*margin-left:0px;*/
+    padding-left: 15px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    color : grey;
+    background: white;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+    color: white;
+    background-color:#2e6da4;
+}
+.navbar-default .navbar-nav>li>a{
+    color: white;
+}
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 5px;
+    text-align: center;
+    margin: auto;
+    padding:0;
+}
+.navbar-toggle {
+    z-index:1;
+}
+.collapse-out.navbar-default .navbar-nav>li{
+    margin-right:20px;
+}
+.navbar-nav>li>a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.navbar-nav .navbar-btn{
+    display:block;
+}
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.navbar-collapse{
+    padding-right:0;
+}
+.navbar .active .btn.btn-primary, .navbar .active .btn.btn-primary:hover, .navbar .active .btn.btn-primary:focus {
+    outline: 0 none;
+    border :none;
+    background-color:white;
+    color :grey;
+}
+.navbar .btn.btn-primary:hover,.navbar .btn.btn-primary:focus {
+    color: white;
+    background-color:#337ab7;
+}
+.navbar-brand.center-logo{
+    display: none;
+}
+.navbar-default {
+    background-color : white;
+    border:0;
+}
+/** navbar end  **/
+
+
+@media only screen and (max-width : 767px) {
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+    #section-1 .navbar-default{
+        border: 0;
+        background-color: #185F8B;
+    }
+    .navbar-brand.side-logo{
+        display : none;
+    }
+    .navbar-brand.center-logo{
+        display: block;
+    }
+    #section-1 .navbar-default{
+        border: 0;
+        background-color: #185F8B;
+    }
+    #section-1 .box-left:before,#section-1 .box-left:after {
+        background-color :#185F8B;
+    }
+
+    /* sliding Menu bar */
+    #slide-nav .navbar-toggle {
+        cursor: pointer;
+        position: relative;
+        line-height: 0;
+        float: left;
+        width: 30px;
+        height: 50px;
+        margin-bottom:0;
+        margin-top:0;
+        padding:  0;
+        border: 0;
+        background: transparent;
+    }
+    #slide-nav .navbar-toggle.slide-active{
+        /* margin-left: 25px;*/
+    }
+    .navbar-header {
+        position: relative
+    }
+    #slide-nav .navbar-header {
+        margin: 0 auto;
+    }
+    #slide-nav .navbar-toggle > .icon-bar {
+        width: 100%;
+        display: block;
+        height: 3px;
+        margin: 5px 0 0 0;
+    }
+    #slide-nav .navbar-toggle.slide-active .icon-bar {
+        background: #e8f0f2;
+    }
+    .collapse-out.navbar-default .navbar-nav>li{
+        margin-right:0;
+    }
+    .navbar-nav{
+        margin :0;
+    }
+    #page-content{
+        position: relative;
+        width: 100%;
+    }
+    #slide-nav .navbar.slide-active {
+        position: absolute;
+        width: 80%;
+        top: -1px;
+    }
+    #slide-nav #slidemenu {
+        background: black;
+        left: -100%;
+        width: 80%;
+        min-width: 0;
+        position: absolute;
+        padding-left: 0;
+        z-index: 101;
+        top: -8px;
+        margin: 0 -4px;
+    }
+    #navbar-height-col {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        bottom:0;
+        left: -100%;
+        background: black;
+        z-index: 100;
+    }
+}

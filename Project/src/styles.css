@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+body, html{
+    width :100%;
+    height : 100%;
+    overflow-x: hidden;
+}
+
+.box-left{
+    padding-right: 0;
+    padding-left: 0;
+}
+.box-left:before,
+.box-left:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 999px;
+    top: 0;
+    bottom: 0;
+}
+/*
+#section-2.row{
+    margin-left:0;
+    margin-right:0;
+}*/
+.box-left:before {
+    left: -999px;
+}
+.box-left:after {
+    right: -999px;
+}

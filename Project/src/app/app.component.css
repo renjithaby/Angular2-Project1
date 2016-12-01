@@ -1,0 +1,26 @@
+.box-left{
+    padding-right: 0;
+    padding-left: 0;
+}
+.box-left:before,
+.box-left:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 999px;
+    top: 0;
+    bottom: 0;
+}
+#section-0.row,#section-1.row,#section-2.row,#section-3.row, #section-6.row,#section-7.row,#section-8.row,#section-4.row,#section-5.row,.horizontal-line{
+    margin-left:0;
+    margin-right:0;
+}
+.box-left:before {
+    left: -999px;
+}
+.box-left:after {
+    right: -999px;
+}
+#section-0 .box-left:before,#section-0 .box-left:after{
+    background-color :black;
+}
