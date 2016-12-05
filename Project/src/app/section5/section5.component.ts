@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MainPageDataService } from '../main-page-data.service';
 
 @Component({
   selector: 'app-section5',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./section5.component.css']
 })
 export class Section5Component implements OnInit {
-
-  constructor() { }
+  private data :any ;
+  constructor(private mainPageDataService: MainPageDataService) { }
 
   ngOnInit() {
+      this.getData();
+  }
+
+  getData():void{
+    this.data = this.mainPageDataService.getSection5Data();
   }
 
 }

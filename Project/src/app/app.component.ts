@@ -24,7 +24,6 @@ export class AppComponent {
 
     toggleMenuState(){
         this.menuState = this.menuState === 'out' ? 'in' : 'out';
-        console.log(window);
     }
 
     @HostListener('window:resize', ['$event'])
@@ -34,8 +33,18 @@ export class AppComponent {
         }
     }
 
-
-  // console.log(window);
-
-
 }
+
+
+// Things to do
+/*
+1* create services and send the values to the compoenent through json
+
+2* split each component into further small components
+
+3* use nghide for the empty bg and hide it if is for small device
+
+4* define routers for the nav elements
+
+
+*/

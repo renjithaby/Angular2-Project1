@@ -11,6 +11,7 @@ import { Section4Component } from './section4/section4.component';
 import { Section5Component } from './section5/section5.component';
 import { Section6Component } from './section6/section6.component';
 import { SlidemenuComponent } from './slidemenu/slidemenu.component';
+import { MainPageDataService } from './main-page-data.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { SlidemenuComponent } from './slidemenu/slidemenu.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [MainPageDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -14,7 +14,6 @@ export class SlidemenuComponent implements OnInit {
   }
     @Output() toggleMenu =  new EventEmitter();
     handleCloseBtnClick(){
-        console.log("close btn clicked");
         this.toggleMenu.emit();
     }
 }
