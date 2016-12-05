@@ -3,7 +3,8 @@
  ***/
 
 1) Go to folder Project
-2) Type ng serve  to build and start the server on localhost:4200
+2)  npm install
+3) ng serve   ( to build and start the server on localhost:4200)
 
 Note: if incase the
 ng serve failed to work with localhost use  this alternative command to run the server
