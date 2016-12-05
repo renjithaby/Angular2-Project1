@@ -1,3 +1,22 @@
+/***
+ To run the Project
+ ***/
+
+1) Go to folder Project
+2) Type ng serve  to build and start the server on localhost:4200
+
+Note: if incase the
+ng serve failed to work with localhost use  this alternative command to run the server
+ng serve --host 0.0.0.0
+and use your ip adddress while loading the page, ie "your ip":4200.
+
+ /*******/
+
+
+
+
+
+
 # Project
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.21.
@@ -29,3 +48,8 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+
+
