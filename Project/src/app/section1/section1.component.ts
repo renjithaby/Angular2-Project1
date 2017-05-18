@@ -16,6 +16,7 @@ export class Section1Component implements OnInit {
     @Output() toggleMenu =  new EventEmitter();
     toggleMenuBtnClick(){
         this.toggleMenu.emit();
+        consoel.log("helloo");
     }
 
 }
